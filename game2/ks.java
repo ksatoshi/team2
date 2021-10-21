@@ -19,7 +19,11 @@ public class ks extends Actor
             setRotation(90);
             move(1);
         }   
-        if(Greenfoot.isKeyDown("up"))
+        if( Greenfoot.isKeyDown( "left" ) ){
+            setRotation(180);
+            move(1);
+        }
+        if( Greenfoot.isKeyDown( "up" ) )
         {
             setRotation(-90);
             move(1);
