@@ -5,8 +5,13 @@ class.kame.image=turtle.png
 class.ks.image=tree2.png
 editor.fx.0.height=739
 editor.fx.0.width=816
+<<<<<<< HEAD
 editor.fx.0.x=1066
 editor.fx.0.y=211
+=======
+editor.fx.0.x=937
+editor.fx.0.y=134
+>>>>>>> 489fc4d198eb5001f2b9f0a3d925b5cb2694693e
 height=585
 package.numDependencies=0
 package.numTargets=5
