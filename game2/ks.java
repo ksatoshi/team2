@@ -14,15 +14,15 @@ public class ks extends Actor
      */
     public void act() 
     {
-<<<<<<< HEAD
+
         if( Greenfoot.isKeyDown( "left" ) ){
             setRotation(180);
-=======
+            move(1);
+        }
         if(Greenfoot.isKeyDown("up"))
         {
             setRotation(-90);
->>>>>>> 489fc4d198eb5001f2b9f0a3d925b5cb2694693e
             move(1);
         }
-    }    
+    }
 }
