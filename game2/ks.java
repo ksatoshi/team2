@@ -14,10 +14,23 @@ public class ks extends Actor
      */
     public void act() 
     {
-        if(Greenfoot.isKeyDown("up"))
+        // Add your action code here.
+        if( Greenfoot.isKeyDown( "down" ) ){
+            setRotation(90);
+            move(1);
+        }   
+        if( Greenfoot.isKeyDown( "left" ) ){
+            setRotation(180);
+            move(1);
+        }
+        if( Greenfoot.isKeyDown( "up" ) )
         {
             setRotation(-90);
             move(1);
         }
-    }    
+        if( Greenfoot.isKeyDown( "right" ) ){
+            setRotation(0);
+            move(1);
+        }
+    }
 }
