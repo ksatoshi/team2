@@ -8,12 +8,15 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class kame extends Actor
 {
-    /**
-     * Act - do whatever the kame wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act() 
-    {
-        // Add your action code here.
-    }    
-}
+    private GreenfootImage img_bkup = null;
+    private int width= 100;
+    private int height= 100;
+
+    public kame(){
+        img_bkup = new GreenfootImage( getImage() );
+        getImage().scale( width,height );
+    }
+
+  
+}    
+
