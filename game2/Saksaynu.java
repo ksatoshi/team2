@@ -6,15 +6,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class kame extends Actor
+public class Saksaynu extends Actor
 {
     private GreenfootImage img_bkup = null;
-    private int width= 100;
-    private int height= 100;
+    private int width= 175;
+    private int height= 175;
 
-    public kame(){
+    public Saksaynu(){
         img_bkup = new GreenfootImage( getImage() );
         getImage().scale( width,height );
+        
     }
 
   
