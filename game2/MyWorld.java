@@ -16,6 +16,10 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+<<<<<<< HEAD
+        super(1600, 900, 1); 
+        addObject( new Saksaynu(), 100, 396 );
+=======
 
         super(1600, 900, 1);
 
@@ -27,5 +31,6 @@ public class MyWorld extends World
 
          
 
+>>>>>>> 1dc250e140b92627077764f54ff75d02c5c6af02
     }
 }
