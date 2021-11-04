@@ -19,9 +19,11 @@ public class MyWorld extends World
 
         super(1600, 900, 1);
 
-        addObject( new Chanshi(), 1200, 600 );
-        addObject( new Shanshi(), 1350, 200 );
-        addObject( new Shanshi(), 1350, 750 );
+        addObject( new Chanshi(), 1200, 350 );
+        addObject( new Chanshi(), 1200, 650 );
+        addObject( new Shanshi(), 1450, 200 );
+        addObject( new Shanshi(), 1450, 475 );
+        addObject( new Shanshi(), 1450, 750 );
 
          
 
