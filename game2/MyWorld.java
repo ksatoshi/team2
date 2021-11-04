@@ -16,10 +16,14 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
 
-        addObject( new Chanshi(), 500, 200 );
-        addObject( new Shanshi(), 550, 50 );
-        addObject( new Shanshi(), 550, 350 );
+        super(1600, 900, 1);
+
+        addObject( new Chanshi(), 1200, 600 );
+        addObject( new Shanshi(), 1350, 200 );
+        addObject( new Shanshi(), 1350, 750 );
+
+         
+
     }
 }

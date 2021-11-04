@@ -13,8 +13,8 @@ public class Shanshi extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private GreenfootImage img_bkup = null;
-    private int width=50;
-    private int height= 50;
+    private int width=250;
+    private int height= 250;
 
     public Shanshi(){
         img_bkup = new GreenfootImage( getImage() );
