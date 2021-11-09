@@ -1,43 +1,26 @@
 #Greenfoot project file
 class.Chanshi.image=\u3057\u3083\u304C\u307F\u85E9\u58EB.png
 class.MyWorld.image=bg_kawara.jpg
-<<<<<<< HEAD
-class.Saksaynu.image=\u30B7\u30E3\u30AF\u30B7\u30E3\u30A4\u30F3\ (\u900F\u904E)\ (1).png
 class.Shanshi.image=\u8D77\u7ACB\u3057\u305F\u85E9\u58EB.png
+class.Syakusyain.image=\u30B7\u30E3\u30AF\u30B7\u30E3\u30A4\u30F3\ (\u900F\u904E)\ (1).png
 class.bear.image=wombat.png
 class.ks.image=tree2.png
 dependency1.from=MyWorld
-dependency1.to=Saksaynu
-=======
-class.Shanshi.image=\u8D77\u7ACB\u3057\u305F\u85E9\u58EB.png
-class.Syakusyain.image=\u30B7\u30E3\u30AF\u30B7\u30E3\u30A4\u30F3\ (\u900F\u904E)\ (1).png
-dependency1.from=MyWorld
-dependency1.to=Syakusyain
->>>>>>> f2da4b9bf2495cc2f5626f64552a6926b3245e80
+dependency1.to=Chanshi
 dependency1.type=UsesDependency
 dependency2.from=MyWorld
-dependency2.to=Chanshi
+dependency2.to=Shanshi
 dependency2.type=UsesDependency
 dependency3.from=MyWorld
-dependency3.to=Shanshi
+dependency3.to=Syakusyain
 dependency3.type=UsesDependency
-<<<<<<< HEAD
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-editor.fx.0.y=0
-height=1056
-package.numDependencies=3
-package.numTargets=7
-=======
 editor.fx.0.height=739
 editor.fx.0.width=816
 editor.fx.0.x=388
 editor.fx.0.y=235
 height=1056
 package.numDependencies=3
-package.numTargets=4
->>>>>>> f2da4b9bf2495cc2f5626f64552a6926b3245e80
+package.numTargets=7
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -60,39 +43,26 @@ target1.width=80
 target1.x=0
 target1.y=0
 target2.height=50
-<<<<<<< HEAD
 target2.name=D
-=======
-target2.name=Shanshi
->>>>>>> f2da4b9bf2495cc2f5626f64552a6926b3245e80
 target2.showInterface=false
 target2.type=ClassTarget
 target2.width=80
 target2.x=0
 target2.y=0
 target3.height=50
-<<<<<<< HEAD
 target3.name=Shanshi
-=======
-target3.name=Chanshi
->>>>>>> f2da4b9bf2495cc2f5626f64552a6926b3245e80
 target3.showInterface=false
 target3.type=ClassTarget
 target3.width=80
 target3.x=0
 target3.y=0
 target4.height=50
-<<<<<<< HEAD
 target4.name=Chanshi
-=======
-target4.name=MyWorld
->>>>>>> f2da4b9bf2495cc2f5626f64552a6926b3245e80
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=80
 target4.x=0
 target4.y=0
-<<<<<<< HEAD
 target5.height=50
 target5.name=ks
 target5.showInterface=false
@@ -114,8 +84,6 @@ target7.type=ClassTarget
 target7.width=80
 target7.x=0
 target7.y=0
-=======
->>>>>>> f2da4b9bf2495cc2f5626f64552a6926b3245e80
 version=3.0.0
 width=1936
 world.lastInstantiated=MyWorld

@@ -15,7 +15,7 @@ public class MyWorld extends World
      */
     public MyWorld()
     {    
-<<<<<<< HEAD
+
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
 
         super(1600, 900, 1); 
@@ -25,8 +25,8 @@ public class MyWorld extends World
         addObject( new Shanshi(), 1350, 200 );
         addObject( new Shanshi(), 1350, 750 );
 
-=======
-        super(1600, 900, 1);
+
+        
         
         addObject( new Syakusyain(), 100, 396 );
         addObject( new Chanshi(), 1200, 350 );
@@ -34,6 +34,6 @@ public class MyWorld extends World
         addObject( new Shanshi(), 1450, 200 );
         addObject( new Shanshi(), 1450, 475 );
         addObject( new Shanshi(), 1450, 750 );
->>>>>>> f2da4b9bf2495cc2f5626f64552a6926b3245e80
+
     }
 }
