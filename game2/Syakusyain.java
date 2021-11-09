@@ -8,34 +8,34 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Syakusyain extends Actor
 {
-    private GreenfootImage img_bkup = null;
     private int width= 175;
     private int height= 175;
+    
+    private final int moving_width = 1; //移動幅の指定
 
     public Syakusyain(){
-        img_bkup = new GreenfootImage( getImage() );
         getImage().scale( width,height );
-        
+    }
+
+    public void act(){
         int x = getX();
         int y = getY();
         
         if(Greenfoot.isKeyDown("w") || Greenfoot.isKeyDown("up")){
-            setLocation(x,y+1);
+            setLocation(x,y-moving_width);
         }
         
         if(Greenfoot.isKeyDown("a") || Greenfoot.isKeyDown("left")){
-            setLocation(x-1,y);
+            setLocation(x-moving_width,y);
         }
         
         if(Greenfoot.isKeyDown("s") || Greenfoot.isKeyDown("down")){
-            setLocation(x,y-1);
+            setLocation(x,y+moving_width);
         }
         
         if(Greenfoot.isKeyDown("d") || Greenfoot.isKeyDown("right")){
-            setLocation(x+1,y);
+            setLocation(x+moving_width,y);
         }
     }
-
-  
 }    
 
