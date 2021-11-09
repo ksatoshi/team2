@@ -15,11 +15,15 @@ public class MyWorld extends World
      */
     public MyWorld()
     {    
+
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
 
         super(1600, 900, 1); 
         addObject( new Saksaynu(), 100, 396 );
 
+        super(1600, 900, 1);
+
+        addObject( new Syakusyain(), 100, 396 );
 
         addObject( new Chanshi(), 1200, 350 );
         addObject( new Chanshi(), 1200, 650 );
