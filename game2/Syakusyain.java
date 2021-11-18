@@ -11,7 +11,10 @@ public class Syakusyain extends Actor
     private int width= 175;
     private int height= 175;
     
-    private final int moving_width = 1; //移動幅の指定
+    private final int moving_width = 1; /*移動幅の指定*/
+    
+    private Actor chanshi;
+    private Actor shanshi;
 
     public Syakusyain(){
         getImage().scale( width,height );
@@ -20,6 +23,9 @@ public class Syakusyain extends Actor
     public void act(){
         int x = getX();
         int y = getY();
+        
+        chanshi = getOneIntersectingObject(Chanshi.class);
+        shanshi = getOneIntersectingObject(Shanshi.class);
         
         if(Greenfoot.isKeyDown("w") || Greenfoot.isKeyDown("up")){
             setLocation(x,y-moving_width);
@@ -35,6 +41,13 @@ public class Syakusyain extends Actor
         
         if(Greenfoot.isKeyDown("d") || Greenfoot.isKeyDown("right")){
             setLocation(x+moving_width,y);
+        }
+        
+        //当たり判定の処理
+        if(chanshi != null){
+        }
+        
+        if(shanshi != null){
         }
     }
 }    
