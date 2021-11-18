@@ -11,7 +11,7 @@ public class Syakusyain extends Actor
     private int width= 175;
     private int height= 175;
     
-    private final int moving_width = 1; /*移動幅の指定*/
+    private final int moving_width = 3; /*移動幅の指定*/
     
     private Actor chanshi;
     private Actor shanshi;
