@@ -12,27 +12,18 @@ dependency2.type=UsesDependency
 dependency3.from=MyWorld
 dependency3.to=Shanshi
 dependency3.type=UsesDependency
-<<<<<<< HEAD
-editor.fx.0.height=1047
-editor.fx.0.width=974
-editor.fx.0.x=953
-editor.fx.0.y=0
-height=1056
-package.numDependencies=3
-=======
 dependency4.from=Syakusyain
 dependency4.to=Chanshi
 dependency4.type=UsesDependency
 dependency5.from=Syakusyain
 dependency5.to=Shanshi
 dependency5.type=UsesDependency
-editor.fx.0.height=739
-editor.fx.0.width=816
-editor.fx.0.x=552
-editor.fx.0.y=100
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 height=1056
 package.numDependencies=5
->>>>>>> 653ae398043f2368e1dc118edda5eca0180dbf79
 package.numTargets=4
 project.charset=UTF-8
 publish.hasSource=false
