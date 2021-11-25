@@ -29,5 +29,20 @@ public class Shanshi extends Actor
         img.scale( width,height );
         setImage(img);
 
+        int x = getX();
+        int y = getY();
+        int up=0;
+        int down=0;
+
+        for(int i=0; i<90; i++)
+        {
+            up = (int)Math.random()*4;
+            down = (int)Math.random()*4;
+
+            setLocation(x,y+up);
+            setLocation(x,y+down);
+
+        }
+
     }      
 }
