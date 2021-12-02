@@ -11,53 +11,50 @@ public class Syakusyain extends Actor
     private int width= 175;
     private int height= 175;
     
-    private final int moving_width = 3; /*移動幅の指定*/
+    //シャクシャインの過去の座標
+    private int past_x = 0;
+    private int past_y = 0;
+    
+    private final int moving_width = 1; /*移動幅の指定*/
     
     public Syakusyain(){
         getImage().scale( width,height );
     }
 
     public void act(){
-        int x = getX();
-        int y = getY();
+        //シャクシャインの現在の座標
+        int current_x = getX(); 
+        int current_y = getY();
         
         
         if(Greenfoot.isKeyDown("w") || Greenfoot.isKeyDown("up")){
-            setLocation(x,y-moving_width);
+            setLocation(current_x,current_y-moving_width);
         }
         
         if(Greenfoot.isKeyDown("a") || Greenfoot.isKeyDown("left")){
-            setLocation(x-moving_width,y);
+            setLocation(current_x-moving_width,current_y);
         }
         
         if(Greenfoot.isKeyDown("s") || Greenfoot.isKeyDown("down")){
-            setLocation(x,y+moving_width);
+            setLocation(current_x,current_y+moving_width);
         }
         
         if(Greenfoot.isKeyDown("d") || Greenfoot.isKeyDown("right")){
-            setLocation(x+moving_width,y);
+            setLocation(current_x+moving_width,current_y);
         }
         
         Actor chanshi = getOneIntersectingObject(Chanshi.class);
         Actor shanshi = getOneIntersectingObject(Shanshi.class);
         
         //当たり判定の処理
-        if(chanshi != null){
-            int width = chanshi.getImage().getWidth();
-            int height = chanshi.getImage().getHeight();
-            int en_x = chanshi.getX();
-            int en_y = chanshi.getY();
-            
-            if(x <= en_x){
-                setLocation(en_x-width-2,y);
-            }else{
-                setLocation(en_x+width/2,y);
-            }
+        if(chanshi != null || shanshi != null){
+            //衝突があったとき過去のx,y座標に戻す
+            setLocation(past_x,past_y);
         }
         
-        if(shanshi != null){
-            
-        }
+        //過去の座標の更新
+        past_x = current_x;
+        past_y = current_y;
     }
 }    
 
