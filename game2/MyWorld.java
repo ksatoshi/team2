@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -22,6 +21,7 @@ public class MyWorld extends World
         addObject( new Shanshi(), 1450, 200 );
         addObject( new Shanshi(), 1450, 475 );
         addObject( new Shanshi(), 1450, 750 );
+       
 
     }
 }
