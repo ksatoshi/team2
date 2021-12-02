@@ -30,5 +30,5 @@ public class Chanshi extends Actor
         img.scale( width,height );
         setImage(img);
 
-    }    
+    }
 }

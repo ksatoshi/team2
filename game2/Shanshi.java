@@ -15,6 +15,7 @@ public class Shanshi extends Actor
     private GreenfootImage img_bkup = null;
     private int width=250;
     private int height= 250;
+    private int timecount=900;
 
     public Shanshi(){
         img_bkup = new GreenfootImage( getImage() );
@@ -24,6 +25,7 @@ public class Shanshi extends Actor
     public void act() 
     {
         // Add your action code here.
+        //timecount--;
 
         GreenfootImage img = new GreenfootImage(img_bkup);
         img.scale( width,height );
@@ -31,18 +33,20 @@ public class Shanshi extends Actor
 
         int x = getX();
         int y = getY();
-        int up=0;
-        int down=0;
-
-        for(int i=0; i<90; i++)
+        
+        int timer = ((MyWorld)getWorld()).timer;
+       
+        timer = timer / 100;
+        
+        if((timer%2) == 0)
         {
-            up = (int)Math.random()*4;
-            down = (int)Math.random()*4;
-
-            setLocation(x,y+up);
-            setLocation(x,y+down);
-
+            setLocation(x,y+1);
         }
+        if((timer%2) == 1)
+        {
+            setLocation(x,y-1);
+        }
+
 
     }      
 }
