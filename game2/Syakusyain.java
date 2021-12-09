@@ -8,8 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Syakusyain extends Actor
 {
-    private int width= 175;
-    private int height= 175;
+    private int width= (int)(720*0.2);
+    private int height= (int)(1111*0.2);
     
     //シャクシャインの過去の座標
     private int past_x = 0;
