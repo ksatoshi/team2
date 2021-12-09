@@ -124,11 +124,6 @@ public class MyWorld extends World
         if(timer <= 0){
             Greenfoot.stop();
         }
-
-        addObject( new Shanshi(), 1450, 200 );
-        addObject( new Shanshi(), 1450, 475 );
-        addObject( new Shanshi(), 1450, 750 );
-
         //addObject( new timer(),100,50);
 
     }

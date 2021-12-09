@@ -17,19 +17,22 @@ public class Shanshi extends Actor
     private int height= 150;
     private int timecount=900;
 
+   
     public Shanshi(){
         img_bkup = new GreenfootImage( getImage() );
-        getImage().scale( width,height );
+        img_bkup.scale( width,height );
+        setImage(img_bkup);
     }
+    
 
     public void act() 
     {
         // Add your action code here.
         //timecount--;
 
-        GreenfootImage img = new GreenfootImage(img_bkup);
-        img.scale( width,height );
-        setImage(img);
+        //GreenfootImage img = new GreenfootImage(img_bkup);
+        //img.scale( width,height );
+        
 
         int x = getX();
         int y = getY();
