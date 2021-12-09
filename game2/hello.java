@@ -1,39 +1,21 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Shanshi here.
+ * Write a description of class hello here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Shanshi extends Actor
+public class hello extends Actor
 {
     /**
-     * Act - do whatever the Shanshi wants to do. This method is called whenever
+     * Act - do whatever the hello wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    private GreenfootImage img_bkup = null;
-    private int width=150;
-    private int height= 150;
-    private int timecount=900;
-
-   
-    public Shanshi(){
-        img_bkup = new GreenfootImage( getImage() );
-        img_bkup.scale( width,height );
-        setImage(img_bkup);
-    }
-    
-
     public void act() 
     {
         // Add your action code here.
-        //timecount--;
-
-        //GreenfootImage img = new GreenfootImage(img_bkup);
-        //img.scale( width,height );
         
-
         int x = getX();
         int y = getY();
         
@@ -49,7 +31,5 @@ public class Shanshi extends Actor
         {
             setLocation(x,y-1);
         }
-
-
-    }      
+    }    
 }

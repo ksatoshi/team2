@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class timer extends Actor
 {
-    private int timer = 90;
+    public int timer = 90;
     public void setImage()
     {
         text();

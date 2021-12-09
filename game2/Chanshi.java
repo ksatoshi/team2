@@ -14,8 +14,8 @@ public class Chanshi extends Actor
      */
 
     private GreenfootImage img_bkup = null;
-    private int width=250;
-    private int height= 250;
+    private int width=150;
+    private int height= 150;
 
     public Chanshi(){
         img_bkup = new GreenfootImage( getImage() );
@@ -30,5 +30,5 @@ public class Chanshi extends Actor
         img.scale( width,height );
         setImage(img);
 
-    }    
+    }
 }
