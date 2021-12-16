@@ -15,7 +15,7 @@ public class Syakusyain extends Actor
     private int past_x = 0;
     private int past_y = 0;
     
-    private final int moving_width = 1; /*移動幅の指定*/
+    private final int moving_width = 5; /*移動幅の指定*/
     
     public Syakusyain(){
         getImage().scale( width,height );
