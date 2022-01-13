@@ -107,6 +107,10 @@ public class MyWorld extends World
         super(1600, 900, 1); 
         addObject( new Syakusyain(), 100, 396 );
 
+        addObject( new Life(), 50, 850 );
+        addObject( new Life(), 100, 850 );
+        addObject( new Life(), 150, 850 );
+        
         addObject( new Chanshi(), 1200, 350 );
         addObject( new Chanshi(), 1200, 650 );
         addObject( new Shanshi(), 1450, 225 );
