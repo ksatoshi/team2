@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.Random;
 
 /**
  * Write a description of class Shanshi here.
@@ -16,12 +17,13 @@ public class Shanshi extends Actor
     private int width=150;
     private int height= 150;
     private int timecount=900;
-
+    private Random rand;
    
     public Shanshi(){
         img_bkup = new GreenfootImage( getImage() );
         img_bkup.scale( width,height );
         setImage(img_bkup);
+        rand = new Random();
     }
     
 
@@ -50,6 +52,11 @@ public class Shanshi extends Actor
             setLocation(x,y-1);
         }
 
-
+                //銃弾を出すための乱数を生成
+        int r = rand.nextInt(1000)+1;
+        //rが3の倍数の時に銃弾を出す
+        if(r%330==0){
+            getWorld().addObject(new Judan(),x,y);
+        }
     }      
 }
