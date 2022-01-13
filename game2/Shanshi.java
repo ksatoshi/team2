@@ -53,9 +53,9 @@ public class Shanshi extends Actor
         }
 
                 //銃弾を出すための乱数を生成
-        int r = rand.nextInt(100)+1;
+        int r = rand.nextInt(1000)+1;
         //rが3の倍数の時に銃弾を出す
-        if(r%98==0){
+        if(r%330==0){
             getWorld().addObject(new Judan(),x,y);
         }
     }      
