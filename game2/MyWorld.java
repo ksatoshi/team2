@@ -17,7 +17,7 @@ public class MyWorld extends World
 {
 
     public int timer = 9000;
-
+    GreenfootSound bgm = null;
     // Reffered from core/TextLabel.java
     // Copyright (C) 2013,2014 Poul Henriksen and Michael Kolling 
     // Licence: GPL2
@@ -113,6 +113,8 @@ public class MyWorld extends World
         addObject( new Shanshi(), 1450, 500 );
         addObject( new Shanshi(), 1450, 775 );
         showTextEx("Timer:" + timer/100, 100, 50, 50, false, greenfoot.Color.BLACK );
+        
+        bgm = new GreenfootSound( "test.mp3" );
     }
 
     public void subtractTime()
@@ -131,5 +133,15 @@ public class MyWorld extends World
     public void act() 
     {
         subtractTime();
-    }   
+    }
+    
+    public void started()
+    {
+        bgm.playLoop();
+    }
+    
+    public void stopped()
+    {
+        bgm.stop();
+    }
 }
